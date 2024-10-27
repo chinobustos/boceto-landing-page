@@ -7,207 +7,6 @@ body{
     font-family: Poppins;
 }
     
-.body-login {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-size: cover;
-        background-image: url(/img/auris.jpg);
-}
-.container-form {
-    display: flex;
-    border-radius: 20px;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
-    height: 500px;
-    max-width: 900px;
-    transition: all 1s ease;
-    margin: 10px;
-  }
-  
-  .information {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #c7eef3;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  
-  .info-childs {
-    width: 100%;
-    padding: 0 30px;
-  }
-  
-  .info-childs h2 {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  .info-childs p {
-    margin: 15px 0 ;
-    color: #555;
-  }
-  
-  .info-childs input {
-    background-color: transparent;
-    outline: none;
-    border: solid 2px #9191bd;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #9191bd;
-    cursor: pointer;
-    transition: background-color .3s ease;
-  }
-  
-  .info-childs input:hover {
-    background-color: #9191bd;
-    border: none;
-    color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-  }
-  
-  .form-information {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    text-align: center;
-    background-color: #f8f8f8;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  
-  .form-information-childs {
-    padding: 0 30px;
-  }
-  
-  .form-information-childs h2 {
-    color: #333;
-    font-size: 2rem;
-  }
-  
-  .form-information-childs p {
-    color: #555;
-  }
-  
-  .form {
-    margin: 30px 0 0 0;
-  }
-  
-  .form label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    padding: 0 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-  }
-  
-  .form label input {
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    color: #333;
-  }
-  
-  .form label i {
-    color: #a7a7a7;
-  }
-  
-  .form input[type="submit"] {
-    background-color: #9191bd;
-    color: #fff;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-  }
-  
-  .form input[type="submit"]:hover {
-    background-color: #7a7a9a;
-  }
-  
-  .hide {
-    position: absolute;
-    transform: translateY(-300%);
-  }
-  .form div .alerta {
-    width: 290px;
-    text-align: left;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    font-size: .8rem;
-  }
-  
-  .form > .alerta-error,
-  .form > .alerta-exito {
-    display: none;
-  }
-  
-  .form .alertaError {
-    display: block;
-    background-color: #F66060;
-    padding: .5rem 1rem;
-    margin-top: 10px;
-    font-weight: 500;
-    font-size: .8rem;
-  }
-  
-  .form .alertaExito {
-    display: block;
-    background-color: #0ca828;
-    padding: .5rem 1rem;
-    margin-top: 10px;
-    font-weight: 500;
-    font-size: .8rem;
-  }
-  
-  .form .error {
-    outline: solid 2px #9d2222;
-  }
-  
-  
-  @media screen and (max-width:750px) {
-    html {
-      font-size: 12px;
-    }
-  }
-  
-  @media screen and (max-width:580px) {
-    html {
-      font-size: 15px;
-    }
-  
-    .container-form {
-      height: auto;
-      flex-direction: column;
-    }
-  
-    .information {
-      width: 100%;
-      padding: 20px;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0;
-    }
-  
-    .form-information {
-      width: 100%;
-      padding: 20px;
-      border-bottom-left-radius: 20px;
-      border-top-right-radius: 0;
-    }
-  }
-  
   
 /*******************************************************************index*****************************************************/
  header{
@@ -826,3 +625,456 @@ body{
     }
 }              
 
+
+.body__login{
+    background: linear-gradient(#69495b,#3e2132);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top:30px ;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 40%;
+    max-block-size: 100%;
+    backdrop-filter: blur (50px);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 20px 15px 20px blueviolet;
+  }
+  
+  .message {
+    color: #355891;
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    justify-content: center;
+    width: 80%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+  }
+  
+  .form label .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input01:focus + span,.form label .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input01:valid + span {
+    color: green;
+  }
+  
+  .fancy {
+    background-color: white;
+    max-width: 50%;
+    border: 2px solid #355891;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #355891;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    justify-content: center;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: violet;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #355891;
+    transform: translateX(30%);
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy:hover {
+    color: #355891;
+    background: violet;
+  }
+  
+  .fancy:hover::before {
+    width: 1.5rem;
+    background: #355891;
+  }
+  
+  .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+  
+  .fancy:hover .bottom-key-1,
+   .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
+  .titulos__login{
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .titulo__login{
+    font-size: 30px;
+  }
+  .descripcion__login{
+    font-size: 20px;
+  }
+  @keyframes hero-gradient-animation {
+    0% {
+        --x-0: 59%;
+        --y-0: 16%;
+        --c-0: hsla(348.0882352941176, 30%, 23%, 1);
+        --s-start-0: 6.018788142925232%;
+        --s-end-0: 35%;
+        --c-1: hsla(307.05882352941177, 73%, 36%, 1);
+        --x-1: 92%;
+        --y-1: 7%;
+        --s-start-1: 3.315649867374005%;
+        --s-end-1: 6.33664952285726%;
+        --y-2: 75%;
+        --x-2: 78%;
+        --s-start-2: 0%;
+        --s-end-2: 7%;
+        --c-2: hsla(326.91176470588243, 88%, 23%, 1);
+        --c-3: hsla(243, 83%, 19%, 0.5);
+        --x-3: 59%;
+        --s-start-3: 0%;
+        --s-end-3: 68%;
+        --y-3: 59%;
+        --s-start-4: 3%;
+        --s-end-4: 36%;
+        --c-4: hsla(313.01350392211015, 8%, 31%, 1);
+        --x-4: 7%;
+        --y-4: 86%;
+    }
+
+    100% {
+        --x-0: 63%;
+        --y-0: 23%;
+        --c-0: hsla(287, 87%, 40%, 1);
+        --s-start-0: 0%;
+        --s-end-0: 11.238503048843667%;
+        --c-1: hsla(0, 100%, 50%, 1);
+        --x-1: 89%;
+        --y-1: 14%;
+        --s-start-1: 0%;
+        --s-end-1: 36%;
+        --y-2: 90%;
+        --x-2: 92%;
+        --s-start-2: 1%;
+        --s-end-2: 28%;
+        --c-2: hsla(359.00000000000006, 96%, 60%, 1);
+        --c-3: hsla(246, 83%, 28%, 0.5);
+        --x-3: 2%;
+        --s-start-3: 0%;
+        --s-end-3: 36.852784336403765%;
+        --y-3: 9%;
+        --s-start-4: 12.198718286003295%;
+        --s-end-4: 40%;
+        --c-4: hsla(311, 90%, 31%, 1);
+        --x-4: 13%;
+        --y-4: 19%;
+    }
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 59%
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 16%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(348.0882352941176, 30%, 23%, 1)
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 6.018788142925232%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 35%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(307.05882352941177, 73%, 36%, 1)
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 92%
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 3.315649867374005%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 6.33664952285726%
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 75%
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 78%
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(326.91176470588243, 88%, 23%, 1)
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(243, 83%, 19%, 0.5)
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 59%
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 59%
+}
+
+@property --s-start-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 3%
+}
+
+@property --s-end-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 36%
+}
+
+@property --c-4 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(313.01350392211015, 8%, 31%, 1)
+}
+
+@property --x-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --y-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 86%
+}
+
+.body__login {
+    --x-0: 59%;
+    --y-0: 16%;
+    --c-0: hsla(348.0882352941176, 30%, 23%, 1);
+    --c-1: hsla(307.05882352941177, 73%, 36%, 1);
+    --x-1: 92%;
+    --y-1: 7%;
+    --y-2: 75%;
+    --x-2: 78%;
+    --c-2: hsla(326.91176470588243, 88%, 23%, 1);
+    --c-3: hsla(243, 83%, 19%, 0.5);
+    --x-3: 59%;
+    --y-3: 59%;
+    --c-4: hsla(313.01350392211015, 8%, 31%, 1);
+    --x-4: 7%;
+    --y-4: 86%;
+    ;
+    background-color: hsla(228, 71%, 4%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: normal, normal, normal, normal, normal;
+}

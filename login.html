@@ -11,12 +11,49 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>FORMULARIO DE REGISTRO E INICIO SESIÓN</title>
 </head>
-<body>
-    <div class="formulario">
-        
-    </div>
+<body class="body__login ">
+    <section class="titulos__login">
+        <div class="titulo__login">
+            <h1>Resgistrate</h1>
+        </div>
+        <div class="descripcion__login">
+            <h3>Estas a un paso de conseguir tus auriculares In Ear</h3>
+            <p>"Lleva la música contigo a otro nivel." </p>
+        </div>
+    </section>
+
+
+    <form class="form">
+
+        <div class="flex">
+            <label>
+                <input class="input" type="text" placeholder="" required="" id="username" >
+                <span>Nombre</span>
+            </label>
+
+            <label>
+                <input class="input" type="text" placeholder="" required="" id="lastname" >
+                <span>Apellido</span>
+            </label>
+        </div>
+
+        <label>
+            <input class="input" type="email" placeholder="" required=""  id="email">
+            <span>Email</span>
+        </label>
+
+        <label>
+            <input class="input" placeholder="" type="tel" required=""  id="phoneNumber">
+            <span>Telefono</span>
+        </label>
+        <label>
+            <input class="input" placeholder="" type="adress" required=""  id="adress">
+            <span>Dirección</span>
+        </label>
+
+        <input type="submit" class="fancy" id="submit">
+    </form>
     <script type="module" src="./js/config.js"></script>
 
-    <script type="module" src="./js/form.js"></script>
 </body>
 </html>
