@@ -27,6 +27,13 @@ import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/11.0.1
                 phoneNumber: document.getElementById("phoneNumber").value,
 
             });
+            Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "¡Tu compra fue realizada con exito!",
+                showConfirmButton: false,
+                timer: 1500
+              });
     })
 
  console.log("Conexión a Firebase establecida correctamente.");
